@@ -11,3 +11,5 @@ output:
     theme:
       version: 4
       bootswatch: minty
+    css: libs/styles.css
+output_dir: "."
