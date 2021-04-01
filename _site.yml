@@ -1,15 +1,47 @@
-name: "my-website"
+name: "marineenergy.app"
 navbar:
-  title: "My Website"
+  title: "MarineEnergy.app"
+  type: inverse # inverse or default
   left:
-    - text: "Home"
-      href: index.html
+    - text: "Projects"
+      href: projects.html
+    - text: "Regulations"
+      menu:
+        - text: "Regulations"
+          href: regs.html
+        - text: "USACE Process"
+          href: regs-usace.html
+        - text: "FERC Process"
+          href: regs-ferc.html
+        - text: "State Process"
+          href: regs-state.html
+    - text: "Interactions"
+      href: env.html
+    - text: "Documents"
+      href: mgt.html
+    - text: "Management"
+      href: mgt.html
+    - text: "Configure"
+      href: https://shiny.marineenergy.app/report/?nav=Configure
+    - text: "Literature"
+      href: https://shiny.marineenergy.app/report/?nav=Literature
+    - text: "Spatial"
+      href: https://shiny.marineenergy.app/report/?nav=Spatial
+    - text: "Reports"
+      href: https://shiny.marineenergy.app/report/?nav=Reports
+  right:
     - text: "About"
       href: about.html
+    - text: "Help"
+      href: help.html
 output:
   html_document:
     theme:
       version: 4
-      bootswatch: minty
-    css: libs/styles.css
+      bootswatch: yeti
+    css: libs/styles-dept11-bs4.css
+    mathjax: null    
+    include:
+      #before_body: libs/header.html
+      after_body: "libs/footer.html"    
 output_dir: "."
