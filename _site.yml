@@ -40,6 +40,7 @@ output:
       version: 4
       bootswatch: yeti
     css: libs/styles-dept11-bs4.css
+    #css: libs/scss/src/styles-bs4.scss
     mathjax: null    
     include:
       #before_body: libs/header.html
